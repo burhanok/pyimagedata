@@ -1,0 +1,81 @@
+{% load static %}
+<div class="container mt-3 d-md-none d-sm-none d-none d-lg-block">
+    <div class="row">
+        <div class="col-4">
+            <img src="{% static 'img/logo/pyimagedata.png' %}" alt="" width="300">
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-lg-2">
+    <img class="d-lg-none d-block d-sm-block d-md-block" src="{% static 'img/logo/pyimagedata.png' %}" alt="" width="200">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="{% url 'index' %}">GET STARTED <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  A.I
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="{% url 'machinelearning' %}">Machine Learning</a>
+                  <a class="dropdown-item" href="{% url 'deeplearning' %}">Deep Learning</a>
+                  <a class="dropdown-item" href="{% url 'rflearning' %}">Reinforcement Learning</a>
+                  <a class="dropdown-item" href="{% url 'datascience' %}">Datascience</a>
+                  <a class="dropdown-item" href="{% url 'selfdrivingcar' %}">Self Driving Car</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  COMPUTER VISION
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="{% url 'opencv' %}">Opencv</a>
+                  <a class="dropdown-item" href="{% url 'yolo' %}">Yolo</a>
+                  <a class="dropdown-item" href="{% url 'objectdetection' %}">Object Detection</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  ROBOTICS
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="{% url 'ros' %}">Ros</a>
+                  <a class="dropdown-item" href="{% url 'raspberrypi' %}">Raspberry Pi</a>
+                  <a class="dropdown-item" href="{% url 'arduino' %}">Arduino</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  PROGRAMMING
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="{% url 'python' %}">Python</a>
+                  <a class="dropdown-item" href="{% url 'cplusplus' %}">C++</a>
+                  <a class="dropdown-item" href="{% url 'webdevelopment' %}">Web Development</a>
+                  <a class="dropdown-item" href="{% url 'golang' %}">Golang</a>
+                  <a class="dropdown-item" href="{% url 'javascript' %}">Javascript</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  ENGINEERING
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="{% url 'controltheory' %}">Control Theory</a>
+                  <a class="dropdown-item" href="{% url 'scipy' %}">Scipy</a>
+                </div>
+              </li>
+            </ul>
+            
+          </div>
+    </div>
+  </nav>
